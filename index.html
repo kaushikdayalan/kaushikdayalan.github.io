@@ -1,324 +1,442 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Google Fots -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaushik Dayalan | Data Engineer & Data Scientist</title>
+  <meta name="description" content="Data Scientist & Data Engineer with 3+ years of experience in statistical analysis, machine learning, data infrastructure, and cloud platforms. Based in Berlin, Germany.">
+  <meta name="keywords" content="Data Engineer, Data Scientist, Machine Learning, Spark, AWS, Databricks, Python, Berlin">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
-  <!-- Remixicon Icon -->
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-  <!-- Remixicon Icon -->
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <!-- Main CSS -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <title>Kaushik Dayalan - Data Scientist</title>
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#128202;</text></svg>">
 </head>
-
 <body>
 
-  <!-- header -->
-  <header class="ds-header" id="site-header">
-    <div class="container">
-      <div class="ds-header-inner">
-        <!-- logo -->
-        <a href="index.html" class="ds-logo">
-          <span>KD</span>Kaushik Dayalan
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>KD<span class="logo-bracket"> /&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="Kaushik_Dayalan_CV.pdf" class="nav-link nav-cta" target="_blank" rel="noopener noreferrer">Resume <i class="fas fa-download"></i></a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <canvas class="hero-canvas" id="heroCanvas"></canvas>
+    <div class="hero-content">
+      <p class="hero-greeting mono">
+        <span class="accent">&gt;</span> hello_world
+      </p>
+      <h1 class="hero-name">
+        Kaushik <span class="accent">Dayalan</span>
+      </h1>
+      <div class="hero-title-wrapper">
+        <span class="hero-title-prefix mono"><span class="accent">&gt;</span> role: </span>
+        <span class="hero-title mono" id="typingText"></span>
+        <span class="cursor">|</span>
+      </div>
+      <p class="hero-description">
+        Building data platforms, ML models, and intelligent systems that turn raw data into business impact.
+      </p>
+      <div class="hero-cta">
+        <a href="#experience" class="btn btn-primary">
+          <i class="fas fa-briefcase"></i> View Experience
         </a>
-        <!-- logo -->
-        <!-- social -->
-        <ul class="ds-social">
-          <li><a href="https://github.com/kaushikdayalan" target="_blank"><i class="ri-github-fill"></i></a></li>
-          <li><a href="https://medium.com/@Kaushik_Dayalan" target="_blank"><i class="ri-medium-fill"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/kaushik-dayalan-284081172/" target="_blank"><i
-                class="ri-linkedin-fill"></i></a></li>
-        </ul>
-        <!-- social -->
+        <a href="#contact" class="btn btn-outline">
+          <i class="fas fa-paper-plane"></i> Get In Touch
+        </a>
+      </div>
+      <div class="hero-location">
+        <i class="fas fa-map-marker-alt accent"></i>
+        <span>Berlin, Germany</span>
       </div>
     </div>
-  </header>
-  <!-- header -->
-  <!-- banner -->
-  <div class="ds-banner">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
-          <figure>
-            <img src="assets/images/profile-image1.jpeg">
-          </figure>
-        </div>
-        <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
-          <section>
-            <h1>
-              <span>HI THERE</span>
-              I’m Kaushik Dayalan<br> Data Scientist based in Berlin.
-            </h1>
-          </section>
-        </div>
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <div class="mouse">
+        <div class="wheel"></div>
       </div>
-    </div>
-  </div>
-  <!-- banner -->
+    </a>
+  </section>
 
-  <!-- about -->
-  <div class="ds-about-section">
+  <!-- ===================== ABOUT ===================== -->
+  <section class="section about" id="about">
     <div class="container">
-      <section>
-        <h2 class="ds-heading">About Me</h2>
-        <p>I am a Data Scientist, I have hands-on experience on Machine Learning,
-          Deep Learning and statistical analysis. As a data scientist I know how important
-          data delivery/quality is to leverage data to gain insight from it.
-          I have experience using Kafka, Airflow, Grafana, Docker containers
-          and Data Visualisation tools like Tableuau, to build Data Pipelines.
-          I am always keen on learning new and emerging technologies, as
-          well as solving complex problems. I am especially interested in the field of
-          Machine Leanring and building Big-Data pipelines. I have a
-          Masters Degree in Data Engineering with a GPA of 1.9.
-          I have 1 year of work experience at HQ Revenue GmbH as a working student
-          Data Scientist working on an R&D project for Dynamic Pricing Strategies,
-          which my Master's Thesis was based on. I also have 1 year of experience
-          working as a Freelance Full Stack Web Developer after the completion of my
-          Bachelors Degree.<br> I was born in Bengaluru, India. I am currently based in Berlin.
-          I have a passion for playing the guitar and play county cricket as well.
+      <h2 class="section-title fade-in">
+        <span class="section-number mono">01.</span> About Me
+      </h2>
+      <div class="about-grid">
+        <div class="about-image fade-in">
+          <div class="image-wrapper">
+            <img src="profile_image.jpeg" alt="Kaushik Dayalan" loading="lazy">
+            <div class="image-border"></div>
+          </div>
+        </div>
+        <div class="about-text fade-in">
+          <p>
+            I'm a <span class="accent-text">Data Scientist & Data Engineer</span> with 3+ years of experience
+            building end-to-end data solutions. I specialize in designing scalable data platforms, developing
+            ML models for forecasting and NLP, and creating intelligent systems using Generative AI.
+          </p>
+          <p>
+            My journey spans from building Lakehouse architectures on AWS to developing advanced RAG
+            pipelines and neural networks for dynamic pricing. I thrive at the intersection of
+            <span class="accent-text">data engineering</span> and <span class="accent-text">data science</span>,
+            where infrastructure meets intelligence.
+          </p>
+          <p>
+            When I'm not wrangling data pipelines, you'll find me exploring the latest in AI research
+            and figuring out how to turn complex business problems into elegant data solutions.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">3</span>
+              <span class="stat-label">Companies</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">2</span>
+              <span class="stat-label">Degrees</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIENCE ===================== -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <h2 class="section-title fade-in">
+        <span class="section-number mono">02.</span> Experience
+      </h2>
+
+      <div class="timeline">
+
+        <!-- Elvah -->
+        <div class="timeline-item fade-in">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Data Engineer</h3>
+                <p class="timeline-company">
+                  <i class="fas fa-building"></i> Elvah GmbH
+                </p>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Oct 2025 &ndash; Present</span>
+                <span class="timeline-location"><i class="fas fa-map-marker-alt"></i> Berlin, DE</span>
+              </div>
+            </div>
+            <ul class="timeline-details">
+              <li>Established the company's data platform from scratch, defining engineering standards, architecture, and tooling in a greenfield environment.</li>
+              <li>Built a Lakehouse on AWS (S3, Spark, Delta Lake) with Medallion architecture, ingesting and restructuring MongoDB Atlas exports into clean relational models.</li>
+              <li>Migrated Spark workloads from Databricks to AWS EMR Serverless, reducing infrastructure costs while maintaining scalable, production-grade processing.</li>
+              <li>Led adoption of Dagster for pipeline orchestration, unifying workflow management across data and application teams.</li>
+              <li>Implemented data quality monitoring covering schema drift, anomaly detection, and failure alerting.</li>
+              <li>Developed a PoC ML forecasting model for EV charging session demand across 100k+ chargepoints.</li>
+              <li>Built reusable Databricks dashboards delivering self-serve metrics to marketing and partnerships teams.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">AWS</span>
+              <span class="tag">Spark</span>
+              <span class="tag">Delta Lake</span>
+              <span class="tag">Dagster</span>
+              <span class="tag">EMR Serverless</span>
+              <span class="tag">Databricks</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- StoryMachine -->
+        <div class="timeline-item fade-in">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Data Scientist & Data Engineer</h3>
+                <p class="timeline-company">
+                  <i class="fas fa-building"></i> StoryMachine GmbH
+                </p>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Sept 2023 &ndash; Sept 2025</span>
+                <span class="timeline-location"><i class="fas fa-map-marker-alt"></i> Berlin, DE</span>
+              </div>
+            </div>
+            <ul class="timeline-details">
+              <li>Managed two junior data scientists, supporting their growth and project contributions.</li>
+              <li>Designed, developed and maintained data infrastructure using Delta Lake, Airflow, Postgres, and Kubernetes.</li>
+              <li>Forecasted follower growth using ARIMA to model trends and seasonality for strategic content planning.</li>
+              <li>Developed and managed ETL and ELT pipelines on Airflow.</li>
+              <li>Built an advanced RAG pipeline and agentic workflow using Llama, integrating vectorized retrieval of user-specific communication histories for personalized content generation.</li>
+              <li>Worked closely with interdisciplinary teams for communication and consulting strategies.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">Delta Lake</span>
+              <span class="tag">Airflow</span>
+              <span class="tag">Kubernetes</span>
+              <span class="tag">RAG</span>
+              <span class="tag">LangChain</span>
+              <span class="tag">ARIMA</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- HQ Revenue -->
+        <div class="timeline-item fade-in">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Data Scientist <span class="part-time">(Part-Time)</span></h3>
+                <p class="timeline-company">
+                  <i class="fas fa-building"></i> HQ Revenue GmbH
+                </p>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Sept 2022 &ndash; Aug 2023</span>
+                <span class="timeline-location"><i class="fas fa-map-marker-alt"></i> Berlin, DE</span>
+              </div>
+            </div>
+            <ul class="timeline-details">
+              <li>Research on dynamic pricing strategies and demand forecasting using reinforcement learning.</li>
+              <li>Developed a Neural Net to provide pricing recommendations, increasing overall revenue of a client by 8%.</li>
+              <li>Utilized Azure CI/CD pipelines to test, deploy, and manage the containerized environment.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">Neural Networks</span>
+              <span class="tag">Reinforcement Learning</span>
+              <span class="tag">Azure</span>
+              <span class="tag">Docker</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <h2 class="section-title fade-in">
+        <span class="section-number mono">03.</span> Skills & Tools
+      </h2>
+      <div class="skills-grid">
+
+        <div class="skill-card fade-in">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <h3 class="skill-category">Data Engineering</h3>
+          <div class="skill-tags">
+            <span>Spark</span>
+            <span>PySpark</span>
+            <span>Delta Lake</span>
+            <span>Databricks</span>
+            <span>Airflow</span>
+            <span>Dagster</span>
+            <span>dbt</span>
+          </div>
+        </div>
+
+        <div class="skill-card fade-in">
+          <div class="skill-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <h3 class="skill-category">ML & Forecasting</h3>
+          <div class="skill-tags">
+            <span>Supervised ML</span>
+            <span>Unsupervised ML</span>
+            <span>ARIMA</span>
+            <span>STL Decomposition</span>
+            <span>Neural Networks</span>
+          </div>
+        </div>
+
+        <div class="skill-card fade-in">
+          <div class="skill-icon">
+            <i class="fas fa-robot"></i>
+          </div>
+          <h3 class="skill-category">Generative AI</h3>
+          <div class="skill-tags">
+            <span>RAG Pipelines</span>
+            <span>Agentic AI</span>
+            <span>LangChain</span>
+            <span>LangGraph</span>
+            <span>LangSmith</span>
+          </div>
+        </div>
+
+        <div class="skill-card fade-in">
+          <div class="skill-icon">
+            <i class="fas fa-cloud"></i>
+          </div>
+          <h3 class="skill-category">Cloud & Infra</h3>
+          <div class="skill-tags">
+            <span>AWS S3</span>
+            <span>AWS EMR</span>
+            <span>AWS Lambda</span>
+            <span>Azure</span>
+            <span>Kubernetes</span>
+            <span>Docker</span>
+          </div>
+        </div>
+
+        <div class="skill-card fade-in">
+          <div class="skill-icon">
+            <i class="fas fa-chart-bar"></i>
+          </div>
+          <h3 class="skill-category">Data Visualization</h3>
+          <div class="skill-tags">
+            <span>Tableau</span>
+            <span>Looker Studio</span>
+            <span>Databricks Dashboards</span>
+          </div>
+        </div>
+
+        <div class="skill-card fade-in">
+          <div class="skill-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3 class="skill-category">Programming</h3>
+          <div class="skill-tags">
+            <span>Python</span>
+            <span>SQL</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EDUCATION ===================== -->
+  <section class="section education" id="education">
+    <div class="container">
+      <h2 class="section-title fade-in">
+        <span class="section-number mono">04.</span> Education
+      </h2>
+      <div class="education-grid">
+
+        <div class="education-card fade-in">
+          <div class="education-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h3 class="education-degree">M.S. in Data Engineering</h3>
+          <p class="education-school">Jacobs University, Bremen</p>
+          <p class="education-year"><i class="fas fa-calendar-alt"></i> 2021 &ndash; 2023</p>
+        </div>
+
+        <div class="education-card fade-in">
+          <div class="education-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h3 class="education-degree">B.S. in Computer Science</h3>
+          <p class="education-school">St. Joseph's University, Bengaluru, India</p>
+          <p class="education-year"><i class="fas fa-calendar-alt"></i> 2017 &ndash; 2020</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS (Hidden for now) ===================== -->
+  <!--
+  <section class="section projects" id="projects">
+    <div class="container">
+      <h2 class="section-title fade-in">
+        <span class="section-number mono">05.</span> Projects
+      </h2>
+      <div class="projects-grid">
+      </div>
+    </div>
+  </section>
+  -->
+
+  <!-- ===================== BLOG (Hidden for now) ===================== -->
+  <!--
+  <section class="section blog" id="blog">
+    <div class="container">
+      <h2 class="section-title fade-in">
+        <span class="section-number mono">06.</span> Blog
+      </h2>
+      <div class="blog-grid">
+      </div>
+    </div>
+  </section>
+  -->
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <h2 class="section-title fade-in">
+        <span class="section-number mono">05.</span> Get In Touch
+      </h2>
+      <div class="contact-content fade-in">
+        <p class="contact-text">
+          I'm always open to discussing new opportunities, interesting projects,
+          or collaborations in the data space. Feel free to reach out!
         </p>
-        <div class="ds-button-sec text-center">
-          <a href="https://drive.google.com/file/d/1anylktvYA6vUUfBaemOB2Sb3wbkwiNqU/view?usp=drive_link"
-            class="ds-button">Download Resume</a>
+        <div class="contact-links">
+          <a href="mailto:kaushikruth1@gmail.com" class="contact-link">
+            <i class="fas fa-envelope"></i>
+            <span>kaushikruth1@gmail.com</span>
+          </a>
+          <a href="https://linkedin.com/in/kaushik-dayalan/" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <i class="fab fa-linkedin"></i>
+            <span>linkedin.com/in/kaushik-dayalan</span>
+          </a>
         </div>
-      </section>
-    </div>
-  </div>
-  <!-- about -->
-
-  <!--  Skills -->
-  <div class="ds-skills-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-          <h2 class="ds-heading">Core Skills</h2>
-          <ul class="ds-skills-list">
-            <li>Data Science & Machine Learning</li>
-            <li>NLP</li>
-            <li>Data Analytics</li>
-            <li>Data Warehousing</li>
-            <li>Kubernetes</li>
-            <li>Docker</li>
-            <li>Azure & Azure DevOps</li>
-            <li>AWS</li>
-            <li>Tableau</li>
-            <li>PowerBI</li>
-            <li>Kafka</li>
-            <li>DBT</li>
-            <li>Airflow</li>
-            <li>TensorFlow</li>
-            <li>FastAPI</li>
-            <li>SQL & NoSQL Databases</li>
-          </ul>
-        </div>
-        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-          <h2 class="ds-heading">Programming Languages</h2>
-          <ul class="ds-skills-list">
-            <li>Python</li>
-            <li>JavaScript</li>
-            <li>SQL</li>
-          </ul>
-        </div>
+        <a href="mailto:kaushikruth1@gmail.com" class="btn btn-primary btn-lg">
+          <i class="fas fa-paper-plane"></i> Say Hello
+        </a>
       </div>
     </div>
-  </div>
-  <!--  Skills -->
+  </section>
 
-  <!-- Experience -->
-  <div class="ds-experience-section">
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
     <div class="container">
-      <h2 class="ds-heading">Work Experience</h2>
-      <div class="row ds-experience-list">
-        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-          <section>
-            <span class="ds-year">Sep 2023 - Present</span>
-            <h3 class="ds-officename">StoryMachine GmbH</h3>
-            <span class="ds-department">Data Scientist</span>
-            <ul>
-              <li>Expert in NLP techniques including BERT-based topic modeling for extracting contextually relevant
-                topics, KMeans
-                clustering optimized with dimensionality reduction for high-dimensional text data, and sentiment
-                analysis using
-                pre-trained transformers for nuanced text classification.</li>
-              <li>Built an advanced RAG pipeline using Llama 3.1, integrating vectorized retrieval of user-specific
-                communication
-                histories to generate personalized, context-aware comments. Optimized the system for dynamic content
-                generation that
-                accurately reflected the user's tone of voice, ensuring scalable and high-quality outputs across various
-                use cases.</li>
-              <li>Led the data modelling and database system design initiatives for the company's Big Data
-                infrastructure.</li>
-              <li>Worked with Data Lakes, Data Warehouses, and data delivery.</li>
-              <li>Developed efficient ETL data pipelines on Airflow to deliver quality data to stakeholders.</li>
-              <li>Designed and deployed dashboards for analytics using Google Looker Studio.</li>
-              <li>Designed and built APIs to deliver data easily to data analysts.</li>
-              <li>Developed automized scheduled reports at both internal and client level.</li>
-              <li>Created data unit tests and application unit tests.</li>
-              <li>Managed DevOps CI/CD pipelines for applications deployed on the Kubernetes Cluster.</li>
-              <li>Performed data analytics to uncover key insights addressing potential clients' interest in purchasing
-                company services.</li>
-              <li>Created PowerPoint presentations with data visualisations of key insights found to easily pitch our
-                services to clients.</li>
-            </ul>
-          </section>
-        </div>
-        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-          <section>
-            <span class="ds-year">Sep 2022 - Sep 2023</span>
-            <h3 class="ds-officename">HQ Revenue GmbH</h3>
-            <span class="ds-department">Working Student Data Scientist</span>
-            <ul>
-              <li>Research on dynamic pricing strategies using Machine Learning.</li>
-              <li>Devised a dynamic pricing strategy that increased the overall revenue
-                earned when compared to traditional pricing policies by 8%.</li>
-              <li>Took full ownership of the project and handled a well-maintained
-                large code repository.</li>
-              <li>Utilized the Azure CI/CD pipelines to test, deploy,
-                and manage the containerized environment.</li>
-            </ul>
-          </section>
+      <div class="footer-content">
+        <p class="footer-text">
+          <span class="mono">&lt;</span> Built by Kaushik Dayalan <span class="mono">/&gt;</span>
+        </p>
+        <div class="footer-links">
+          <a href="mailto:kaushikruth1@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://linkedin.com/in/kaushik-dayalan/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/kaushikdayalan" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
         </div>
       </div>
-    </div>
-  </div>
-  <!-- Experience -->
-
-  <!-- Education -->
-  <div class="ds-experience-section">
-    <div class="container">
-      <h2 class="ds-heading">Education</h2>
-      <div class="row ds-experience-list">
-        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-          <section>
-            <span class="ds-year">Sep 2021 - June 2023</span>
-            <h3 class="ds-officename">Constructor University<br>
-              Bremen, Germany</h3>
-            <span class="ds-department">Master of Science in Data Engineering</span>
-            <p>I have acquired a diverse skill set during my study encompassing
-              Data Science, Big Data, Machine Learning, Deep Learning, NLP,
-              Image Processing, and Database Management. Additionally,
-              I've gained experience in creating impactful data visualizations
-              and effectively utilizing them to weave compelling narratives.</p>
-          </section>
-        </div>
-        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-          <section>
-            <span class="ds-year">June 2017 - May 2020</span>
-            <h3 class="ds-officename">St.Joseph's University<br>
-              Bengaluru, Karnataka, India</h3>
-            <span class="ds-department">bachelors in Computer Application</span>
-            <p>I gained a solid foundation in programming languages like C/C++,
-              .NET, Java, and Python. My coursework also encompassed key subjects
-              such as data structures, computer networks, RDBMS, web development,
-              and software engineering, equipping me with a comprehensive
-              understanding of the field.</p>
-          </section>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Education -->
-
-  <!--  Work -->
-  <div class="ds-work-section">
-    <div class="container">
-      <h2 class="ds-heading">Latest works</h2>
-      <div class="ds-work-list-section">
-        <div class="ds-work-list">
-          <div class="row">
-            <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
-              <section>
-                <h3 class="ds-work-tilte">Dynamic Pricing Strategy for
-                  the Hospitality Industry</h3>
-                <p><b>Work Project</b></p>
-                <ul>
-                  <li>I researched and implemented Reinforcement Learning
-                    Algorithms like Monte-Carlo, TD-Learning, SARSA, Q-Learning,
-                    Deep Reinforcement Learning from scratch.</li>
-                  <li>I successfully built a Reinforcement Learning
-                    Library consisting of algorithms implemented.</li>
-                  <li>Implemented Docker containerization techniques as
-                    well as deploying project using Azure CI/CD pipelines.</li>
-                </ul>
-                <br>
-                <!-- <a href="works-setails.html" class="ds-button">Details</a> -->
-              </section>
-            </div>
-            <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
-              <figure><img src="assets/images/work-1.png"></figure>
-            </div>
-          </div>
-        </div>
-        <div class="ds-work-list">
-          <div class="row">
-            <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
-              <section>
-                <h3 class="ds-work-tilte">Human Emotion Generation using GAN's</h3>
-                <p><b>Work Project</b></p>
-                <ul>
-                  <li>I Used GAN technologies to convert a potrait image
-                    of a person to a 5-10 second video displaying an emotion.</li>
-                  <li>I implemented the transer learning technique on
-                    the First Order Montion Model and fine-tuned the model
-                    on the Deeper Forensics Dataset.</li>
-                  <li>I montored metrics of training and validation of the model
-                    using WandB.</li>
-                  <li>Implemented a simple UI using Python to deploy the model and
-                    use the model to generate new videos.</li>
-                  <a href="https://research.constructor.tech/open/human-emotion-generation-using-deep-learning-techniques"
-                    class="ds-button">Publication</a>
-                </ul>
-                <br>
-              </section>
-            </div>
-            <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
-              <figure><img src="assets/images/work-2.png"></figure>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--  Work -->
-
-  <!--  footer -->
-  <footer class="ds-footer text-center">
-    <div class="container">
-      <section>
-        <span>Get in touch</span>
-        <h4>Have questions or need my services? Let’s connect!</h4>
-        <a href="mailto:kaushikruth1@gmail.com" class="ds-button">Lets Talk</a>
-      </section>
-      <span class="ds-copyright">© 2024 All rights reserved.</span>
     </div>
   </footer>
 
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-
-  <!-- Option 2: Separate Popper and Bootstrap JS -->
-  <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
   <script src="assets/js/main.js"></script>
 </body>
-
 </html>
