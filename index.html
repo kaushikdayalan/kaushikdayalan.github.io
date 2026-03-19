@@ -46,33 +46,96 @@
   <!-- ===================== HERO ===================== -->
   <section class="hero" id="hero">
     <canvas class="hero-canvas" id="heroCanvas"></canvas>
-    <div class="hero-content">
-      <p class="hero-greeting mono">
-        <span class="accent">&gt;</span> hello_world
-      </p>
-      <h1 class="hero-name">
-        Kaushik <span class="accent">Dayalan</span>
-      </h1>
-      <div class="hero-title-wrapper">
-        <span class="hero-title-prefix mono"><span class="accent">&gt;</span> role: </span>
-        <span class="hero-title mono" id="typingText"></span>
-        <span class="cursor">|</span>
+    <div class="hero-inner">
+
+      <!-- Left: main content -->
+      <div class="hero-content">
+        <div class="hero-status-badge">
+          <span class="status-dot"></span>
+          Available for new opportunities
+        </div>
+        <p class="hero-greeting mono">
+          <span class="accent">&gt;</span> hello_world
+        </p>
+        <h1 class="hero-name">
+          Kaushik <span class="accent">Dayalan</span>
+        </h1>
+        <div class="hero-title-wrapper">
+          <span class="hero-title-prefix mono"><span class="accent">&gt;</span> role:&nbsp;</span>
+          <span class="hero-title mono" id="typingText"></span>
+          <span class="cursor">|</span>
+        </div>
+        <p class="hero-description">
+          Building data platforms, ML models, and intelligent systems that turn raw data into business impact.
+        </p>
+        <div class="hero-cta">
+          <a href="#experience" class="btn btn-primary">
+            <i class="fas fa-briefcase"></i> View Experience
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fas fa-paper-plane"></i> Get In Touch
+          </a>
+        </div>
+        <div class="hero-location">
+          <i class="fas fa-map-marker-alt accent"></i>
+          <span>Berlin, Germany</span>
+        </div>
       </div>
-      <p class="hero-description">
-        Building data platforms, ML models, and intelligent systems that turn raw data into business impact.
-      </p>
-      <div class="hero-cta">
-        <a href="#experience" class="btn btn-primary">
-          <i class="fas fa-briefcase"></i> View Experience
-        </a>
-        <a href="#contact" class="btn btn-outline">
-          <i class="fas fa-paper-plane"></i> Get In Touch
-        </a>
+
+      <!-- Right: terminal status card -->
+      <div class="hero-right">
+        <div class="terminal-card">
+          <div class="terminal-titlebar">
+            <div class="t-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <span class="t-filename">status.sh</span>
+          </div>
+          <div class="terminal-body">
+            <div class="t-cmd">
+              <span class="t-prompt">$</span>
+              <span>whoami</span>
+            </div>
+            <div class="t-out">kaushik_dayalan</div>
+            <div class="t-cmd">
+              <span class="t-prompt">$</span>
+              <span>cat current_status.json</span>
+            </div>
+            <div class="t-kv-block">
+              <div class="t-kv">
+                <span class="t-key">status</span>
+                <span class="t-sep">:</span>
+                <span class="t-val green">available</span>
+              </div>
+              <div class="t-kv">
+                <span class="t-key">base</span>
+                <span class="t-sep">:</span>
+                <span class="t-val">Berlin, DE</span>
+              </div>
+              <div class="t-kv">
+                <span class="t-key">focus</span>
+                <span class="t-sep">:</span>
+                <span class="t-val">Data Eng + ML</span>
+              </div>
+              <div class="t-kv">
+                <span class="t-key">avail</span>
+                <span class="t-sep">:</span>
+                <span class="t-val amber">immediate</span>
+              </div>
+              <div class="t-kv">
+                <span class="t-key">exp</span>
+                <span class="t-sep">:</span>
+                <span class="t-val">3+ years</span>
+              </div>
+            </div>
+            <div class="t-cmd">
+              <span class="t-prompt">$</span>
+              <span class="t-blink">_</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="hero-location">
-        <i class="fas fa-map-marker-alt accent"></i>
-        <span>Berlin, Germany</span>
-      </div>
+
     </div>
     <a href="#about" class="scroll-indicator" aria-label="Scroll down">
       <div class="mouse">
@@ -85,7 +148,7 @@
   <section class="section about" id="about">
     <div class="container">
       <h2 class="section-title fade-in">
-        <span class="section-number mono">01.</span> About Me
+        <span class="section-number mono">01</span> About Me
       </h2>
       <div class="about-grid">
         <div class="about-image fade-in">
@@ -96,7 +159,7 @@
         </div>
         <div class="about-text fade-in">
           <p>
-            I'm a <span class="accent-text">Data Scientist & Data Engineer</span> with 3+ years of experience
+            I'm a <span class="accent-text">Data Scientist &amp; Data Engineer</span> with 3+ years of experience
             building end-to-end data solutions. I specialize in designing scalable data platforms, developing
             ML models for forecasting and NLP, and creating intelligent systems using Generative AI.
           </p>
@@ -133,7 +196,7 @@
   <section class="section experience" id="experience">
     <div class="container">
       <h2 class="section-title fade-in">
-        <span class="section-number mono">02.</span> Experience
+        <span class="section-number mono">02</span> Experience
       </h2>
 
       <div class="timeline">
@@ -146,7 +209,7 @@
               <div>
                 <h3 class="timeline-role">Data Engineer</h3>
                 <p class="timeline-company">
-                  <i class="fas fa-building"></i> Elvah GmbH
+                  <i class="fas fa-building"></i> elvah GmbH
                 </p>
               </div>
               <div class="timeline-meta">
@@ -156,12 +219,12 @@
             </div>
             <ul class="timeline-details">
               <li>Established the company's data platform from scratch, defining engineering standards, architecture, and tooling in a greenfield environment.</li>
-              <li>Built a Lakehouse on AWS (S3, Spark, Delta Lake) with Medallion architecture, ingesting and restructuring MongoDB Atlas exports into clean relational models.</li>
+              <li>Built a Lakehouse on AWS (S3, Spark, Delta Lake) with Medallion architecture, ingesting and restructuring MongoDB Atlas exports into clean relational models aligned with core business entities.</li>
               <li>Migrated Spark workloads from Databricks to AWS EMR Serverless, reducing infrastructure costs while maintaining scalable, production-grade processing.</li>
               <li>Led adoption of Dagster for pipeline orchestration, unifying workflow management across data and application teams.</li>
-              <li>Implemented data quality monitoring covering schema drift, anomaly detection, and failure alerting.</li>
-              <li>Developed a PoC ML forecasting model for EV charging session demand across 100k+ chargepoints.</li>
-              <li>Built reusable Databricks dashboards delivering self-serve metrics to marketing and partnerships teams.</li>
+              <li>Developed an MLOps pipeline on AWS for time-series forecasting using Prophet, with historical sessions data stored in S3, automated retraining jobs in SageMaker, forecast generation through an API, and monitoring via CloudWatch to ensure reliable production performance.</li>
+              <li>Implemented data quality monitoring across ingestion pipelines covering schema drift, anomaly detection, and failure alerting.</li>
+              <li>Built reusable Databricks dashboards delivering self-serve metrics to marketing and partnerships teams, reducing ad-hoc data requests.</li>
             </ul>
             <div class="timeline-tags">
               <span class="tag">AWS</span>
@@ -169,6 +232,8 @@
               <span class="tag">Delta Lake</span>
               <span class="tag">Dagster</span>
               <span class="tag">EMR Serverless</span>
+              <span class="tag">SageMaker</span>
+              <span class="tag">Prophet</span>
               <span class="tag">Databricks</span>
             </div>
           </div>
@@ -180,7 +245,7 @@
           <div class="timeline-card">
             <div class="timeline-header">
               <div>
-                <h3 class="timeline-role">Data Scientist & Data Engineer</h3>
+                <h3 class="timeline-role">Data Scientist &amp; Data Engineer</h3>
                 <p class="timeline-company">
                   <i class="fas fa-building"></i> StoryMachine GmbH
                 </p>
@@ -192,17 +257,17 @@
             </div>
             <ul class="timeline-details">
               <li>Managed two junior data scientists, supporting their growth and project contributions.</li>
-              <li>Designed, developed and maintained data infrastructure using Delta Lake, Airflow, Postgres, and Kubernetes.</li>
-              <li>Forecasted follower growth using ARIMA to model trends and seasonality for strategic content planning.</li>
+              <li>Designed, developed and maintained the data infrastructure to support efficient data processing and enable better analytics and insights, using Delta Lake, Airflow, Postgres, and Kubernetes.</li>
+              <li>Forecasted follower growth using ARIMA to model trends and seasonality to anticipate audience expansion and strategic content planning.</li>
               <li>Developed and managed ETL and ELT pipelines on Airflow.</li>
-              <li>Built an advanced RAG pipeline and agentic workflow using Llama, integrating vectorized retrieval of user-specific communication histories for personalized content generation.</li>
               <li>Worked closely with interdisciplinary teams for communication and consulting strategies.</li>
+              <li>Built an agentic content-generation system using Llama, with multi-step workflows that decide when to retrieve from vectorized user communication history. Generated personalized outputs that adapt to user tone and past interactions, improving the relevance and consistency of responses.</li>
             </ul>
             <div class="timeline-tags">
               <span class="tag">Delta Lake</span>
               <span class="tag">Airflow</span>
               <span class="tag">Kubernetes</span>
-              <span class="tag">RAG</span>
+              <span class="tag">Agentic AI</span>
               <span class="tag">LangChain</span>
               <span class="tag">ARIMA</span>
             </div>
@@ -247,93 +312,80 @@
   <section class="section skills" id="skills">
     <div class="container">
       <h2 class="section-title fade-in">
-        <span class="section-number mono">03.</span> Skills & Tools
+        <span class="section-number mono">03</span> Skills &amp; Tools
       </h2>
-      <div class="skills-grid">
 
-        <div class="skill-card fade-in">
-          <div class="skill-icon">
-            <i class="fas fa-database"></i>
+      <div class="skills-terminal fade-in">
+        <div class="terminal-titlebar">
+          <div class="t-dots">
+            <span></span><span></span><span></span>
           </div>
-          <h3 class="skill-category">Data Engineering</h3>
-          <div class="skill-tags">
-            <span>Spark</span>
-            <span>PySpark</span>
-            <span>Delta Lake</span>
-            <span>Databricks</span>
-            <span>Airflow</span>
-            <span>Dagster</span>
-            <span>dbt</span>
+          <span class="t-filename">~/skills.json</span>
+        </div>
+        <div class="skill-rows">
+          <div class="skill-row">
+            <div class="skill-key">data_engineering</div>
+            <div class="skill-values">
+              <span>Spark</span>
+              <span>PySpark</span>
+              <span>Delta Lake</span>
+              <span>Databricks</span>
+              <span>Airflow</span>
+              <span>Dagster</span>
+              <span>dbt</span>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-key">ml_forecasting</div>
+            <div class="skill-values">
+              <span>Supervised ML</span>
+              <span>Unsupervised ML</span>
+              <span>ARIMA</span>
+              <span>STL Decomposition</span>
+              <span>Neural Networks</span>
+              <span>Prophet</span>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-key">generative_ai</div>
+            <div class="skill-values">
+              <span>RAG Pipelines</span>
+              <span>Agentic AI</span>
+              <span>LangChain</span>
+              <span>LangGraph</span>
+              <span>LangSmith</span>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-key">cloud_infra</div>
+            <div class="skill-values">
+              <span>AWS S3</span>
+              <span>AWS EMR</span>
+              <span>AWS Lambda</span>
+              <span>SageMaker</span>
+              <span>Azure</span>
+              <span>Kubernetes</span>
+              <span>Docker</span>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-key">visualization</div>
+            <div class="skill-values">
+              <span>Tableau</span>
+              <span>Looker Studio</span>
+              <span>Databricks Dashboards</span>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-key">programming</div>
+            <div class="skill-values">
+              <span>Python</span>
+              <span>SQL</span>
+            </div>
           </div>
         </div>
-
-        <div class="skill-card fade-in">
-          <div class="skill-icon">
-            <i class="fas fa-brain"></i>
-          </div>
-          <h3 class="skill-category">ML & Forecasting</h3>
-          <div class="skill-tags">
-            <span>Supervised ML</span>
-            <span>Unsupervised ML</span>
-            <span>ARIMA</span>
-            <span>STL Decomposition</span>
-            <span>Neural Networks</span>
-          </div>
-        </div>
-
-        <div class="skill-card fade-in">
-          <div class="skill-icon">
-            <i class="fas fa-robot"></i>
-          </div>
-          <h3 class="skill-category">Generative AI</h3>
-          <div class="skill-tags">
-            <span>RAG Pipelines</span>
-            <span>Agentic AI</span>
-            <span>LangChain</span>
-            <span>LangGraph</span>
-            <span>LangSmith</span>
-          </div>
-        </div>
-
-        <div class="skill-card fade-in">
-          <div class="skill-icon">
-            <i class="fas fa-cloud"></i>
-          </div>
-          <h3 class="skill-category">Cloud & Infra</h3>
-          <div class="skill-tags">
-            <span>AWS S3</span>
-            <span>AWS EMR</span>
-            <span>AWS Lambda</span>
-            <span>Azure</span>
-            <span>Kubernetes</span>
-            <span>Docker</span>
-          </div>
-        </div>
-
-        <div class="skill-card fade-in">
-          <div class="skill-icon">
-            <i class="fas fa-chart-bar"></i>
-          </div>
-          <h3 class="skill-category">Data Visualization</h3>
-          <div class="skill-tags">
-            <span>Tableau</span>
-            <span>Looker Studio</span>
-            <span>Databricks Dashboards</span>
-          </div>
-        </div>
-
-        <div class="skill-card fade-in">
-          <div class="skill-icon">
-            <i class="fas fa-code"></i>
-          </div>
-          <h3 class="skill-category">Programming</h3>
-          <div class="skill-tags">
-            <span>Python</span>
-            <span>SQL</span>
-          </div>
-        </div>
-
       </div>
+
     </div>
   </section>
 
@@ -341,7 +393,7 @@
   <section class="section education" id="education">
     <div class="container">
       <h2 class="section-title fade-in">
-        <span class="section-number mono">04.</span> Education
+        <span class="section-number mono">04</span> Education
       </h2>
       <div class="education-grid">
 
@@ -367,42 +419,16 @@
     </div>
   </section>
 
-  <!-- ===================== PROJECTS (Hidden for now) ===================== -->
-  <!--
-  <section class="section projects" id="projects">
-    <div class="container">
-      <h2 class="section-title fade-in">
-        <span class="section-number mono">05.</span> Projects
-      </h2>
-      <div class="projects-grid">
-      </div>
-    </div>
-  </section>
-  -->
-
-  <!-- ===================== BLOG (Hidden for now) ===================== -->
-  <!--
-  <section class="section blog" id="blog">
-    <div class="container">
-      <h2 class="section-title fade-in">
-        <span class="section-number mono">06.</span> Blog
-      </h2>
-      <div class="blog-grid">
-      </div>
-    </div>
-  </section>
-  -->
-
   <!-- ===================== CONTACT ===================== -->
   <section class="section contact" id="contact">
     <div class="container">
       <h2 class="section-title fade-in">
-        <span class="section-number mono">05.</span> Get In Touch
+        <span class="section-number mono">05</span> Get In Touch
       </h2>
       <div class="contact-content fade-in">
         <p class="contact-text">
-          I'm always open to discussing new opportunities, interesting projects,
-          or collaborations in the data space. Feel free to reach out!
+          I'm open to new opportunities in data engineering and data science.
+          Whether it's a role, a project, or just a chat about data &mdash; feel free to reach out.
         </p>
         <div class="contact-links">
           <a href="mailto:kaushikruth1@gmail.com" class="contact-link">
