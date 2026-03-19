@@ -425,24 +425,61 @@
       <h2 class="section-title fade-in">
         <span class="section-number mono">05</span> Get In Touch
       </h2>
-      <div class="contact-content fade-in">
-        <p class="contact-text">
-          I'm open to new opportunities in data engineering and data science.
-          Whether it's a role, a project, or just a chat about data &mdash; feel free to reach out.
-        </p>
-        <div class="contact-links">
-          <a href="mailto:kaushikruth1@gmail.com" class="contact-link">
-            <i class="fas fa-envelope"></i>
-            <span>kaushikruth1@gmail.com</span>
-          </a>
-          <a href="https://linkedin.com/in/kaushik-dayalan/" target="_blank" rel="noopener noreferrer" class="contact-link">
-            <i class="fab fa-linkedin"></i>
-            <span>linkedin.com/in/kaushik-dayalan</span>
-          </a>
+      <div class="contact-layout fade-in">
+
+        <!-- Left: blurb + social links -->
+        <div class="contact-info">
+          <p class="contact-text">
+            I'm open to new opportunities in data engineering and data science.
+            Whether it's a role, a project, or just a chat about data &mdash; drop me a message.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:kaushikruth1@gmail.com" class="contact-link">
+              <i class="fas fa-envelope"></i>
+              <span>kaushikruth1@gmail.com</span>
+            </a>
+            <a href="https://linkedin.com/in/kaushik-dayalan/" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <i class="fab fa-linkedin"></i>
+              <span>linkedin.com/in/kaushik-dayalan</span>
+            </a>
+          </div>
         </div>
-        <a href="mailto:kaushikruth1@gmail.com" class="btn btn-primary btn-lg">
-          <i class="fas fa-paper-plane"></i> Say Hello
-        </a>
+
+        <!-- Right: message form -->
+        <div class="contact-form-wrap">
+          <div class="terminal-card">
+            <div class="terminal-titlebar">
+              <div class="t-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="t-filename">new_message.sh</span>
+            </div>
+            <form class="contact-form" id="contactForm">
+              <input type="hidden" name="access_key" value="bfb17f53-8c89-4ce3-b224-79b372c7d326">
+              <input type="hidden" name="subject" value="Portfolio Contact: New Message">
+              <input type="checkbox" name="botcheck" style="display:none">
+
+              <div class="form-group">
+                <label class="form-label mono" for="name"><span class="t-prompt">$</span> name</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required autocomplete="off">
+              </div>
+              <div class="form-group">
+                <label class="form-label mono" for="email"><span class="t-prompt">$</span> email</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required autocomplete="off">
+              </div>
+              <div class="form-group">
+                <label class="form-label mono" for="message"><span class="t-prompt">$</span> message</label>
+                <textarea id="message" name="message" class="form-input form-textarea" placeholder="What's on your mind?" rows="4" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary form-submit" id="formSubmitBtn">
+                <i class="fas fa-paper-plane"></i>
+                <span>Send Message</span>
+              </button>
+              <div class="form-status" id="formStatus"></div>
+            </form>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>

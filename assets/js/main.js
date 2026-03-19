@@ -141,11 +141,50 @@
     });
   }
 
+  // ---------------------- Contact Form ----------------------
+  function initContactForm() {
+    const form = document.getElementById('contactForm');
+    const btn = document.getElementById('formSubmitBtn');
+    const status = document.getElementById('formStatus');
+    if (!form) return;
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      btn.disabled = true;
+      btn.querySelector('span').textContent = 'Sending...';
+      status.textContent = '';
+      status.className = 'form-status';
+
+      try {
+        const res = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify(Object.fromEntries(new FormData(form))),
+        });
+        const data = await res.json();
+        if (data.success) {
+          status.textContent = '✓ Message sent — I\'ll get back to you soon.';
+          status.className = 'form-status success';
+          form.reset();
+        } else {
+          throw new Error(data.message || 'Submission failed');
+        }
+      } catch (err) {
+        status.textContent = '✗ Something went wrong. Try emailing directly.';
+        status.className = 'form-status error';
+      } finally {
+        btn.disabled = false;
+        btn.querySelector('span').textContent = 'Send Message';
+      }
+    });
+  }
+
   // ---------------------- Init ----------------------
   document.addEventListener('DOMContentLoaded', () => {
     initTypingEffect();
     initNavigation();
     initScrollAnimations();
     initSmoothScroll();
+    initContactForm();
   });
 })();
